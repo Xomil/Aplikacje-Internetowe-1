@@ -1,0 +1,19 @@
+body{
+    background-color:rgb(80, 207, 253);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#box{
+    background-color:rgb(189, 234, 250);
+    width: 50vw;
+    
+}
+
+#search{
+    width: 100%;
+}

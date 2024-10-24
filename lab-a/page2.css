@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url("tlo.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position:top;
+
+}
+
+header{
+    left: 0;
+    top: 0;
+    text-align: center;
+    background-color: rgba(222, 184, 135, 0.596);
+    width: 100%;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav{
+    justify-content: space-between;
+    display: flex;
+}
+
+a{
+    padding: 10px 0;
+    color: white;
+    text-decoration: none;
+    width: 33.3333333333vw;
+    border-right: 4px solid;
+    margin-bottom: 10px;
+    
+
+}
+
+a:last-child{
+    border: none;
+
+}
+
+a:hover{
+    font-weight: bolder;
+    font-size: larger;
+    text-shadow: 2px 1px rgba(255, 255, 255, 0.726);
+}
+
+h1{
+    color: white;
+}
+
+
+main>h2{
+    font-style: italic;
+    font-weight: bold;
+    text-decoration:underline;
+    
+}
+
+h2{
+    text-align: center;
+    font-weight: 100;
+}
+
+h3, p{
+    font-style: oblique;
+}
+
+main{
+    margin-top: 30px;
+}
+
+.przepisy{
+    width: 30%;
+    height: 20%;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.24);
+    border-radius: 30px;
+    text-align: left;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.842);
+    padding: 40px;
+       
+}
+
+img{
+    max-width: 20vw;
+    object-fit: scale-down;
+    border-radius: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+
+}
+
+ul{
+    list-style-position: inside;
+    padding-left: 20px;
+}
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    background-color: rgba(222, 184, 135, 0.596);
+    width: 100%;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    padding: 10px;
+}
