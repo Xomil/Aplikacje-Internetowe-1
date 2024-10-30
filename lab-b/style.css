@@ -1,19 +1,57 @@
-body{
-    background-color:rgb(80, 207, 253);
+body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-}
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #edcdcd;
+  }
+  
+  input[type="text"],
+  input[type="date"] {
+    padding: 8px;
+    margin: 5px 0;
+    width: 100%;
+  }
 
-#box{
-    background-color:rgb(189, 234, 250);
-    width: 50vw;
+  .highlight {
+    background-color: rgb(244, 244, 211); 
     
 }
 
-#search{
-    width: 100%;
-}
+  
+  .task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .task-form {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .edit-btn, .delete-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: blue;
+  }
+  
+  .delete-btn {
+    color: red;
+  }
+  
+  
