@@ -2,21 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-	<script src="script.js" defer></script>	
-    <link rel="stylesheet" href="style.css">
-    
+    <title>Maps with Leaflet</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="leaflet-1.7.1/leaflet.css" />
+    <script src="leaflet-1.7.1/leaflet-src.js"></script>
+    <script src="leaflet-1.7.1/leaflet-providers.js"></script>
+    <script src="leaflet-1.7.1/leaflet-image.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
+    <main>
+        <div id="map"></div>
+        <canvas id="canvas"></canvas>
+    </main>
+    <div id="buttons">
+        <button id="getLocation">Get Current Location</button>
+        <button id="saveButton">Save Raster Map</button>
+    </div>
+    <div id="dropAreaContainer">
+        <div id="puzzleContainer"></div>
+        <div id="dropArea" style=""></div>
+    </div>
+    <div id="footer"></div>
 
-    <div id="map"></div>
-    <button id="getLocation" onclick="Locate()" >Get Location</button><br><br>
-    <span>Latitude: </span> <span id="lat"></span><br><br>
-    <span>Longitude: </spanp> <span id="lon"></span><br><br>
-    
-    
-    
-    
+    <div id="winScreen">
+        <h1>You won!</h1>
+        <button id="replay">Play again!</button>
+    </div>
+
+
 </body>
 </html>

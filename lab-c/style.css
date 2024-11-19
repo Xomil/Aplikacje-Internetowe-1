@@ -1,10 +1,150 @@
-html, body {
-    height: 100%;
+body, html {
+    font-family: Arial, sans-serif;
     margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #f1bea5;
 }
 
-#map{
+main{
+    width: 100%;
+    display: flex;
+}
+
+#map, #canvas {
+    width: 50%;
     height: 400px;
-    width: 600px;
-    border: black 1px solid;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+
+}
+
+#dropAreaContainer {
+    width: 100%;
+    display: flex;
+
+}
+
+#puzzleContainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    height: 400px;
+}
+
+.puzzle-piece {
+    flex-wrap: wrap;
+    width: 25%;
+    height: 100px;
+    cursor: pointer;
+}
+
+
+#dropArea{
+    width: 50%;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.drop-area {
+    width: 25%;
+    height: 25%;
+    flex-wrap: wrap;
+    border: 1px solid #915844;
+    /*border-right: none;*/
+    box-sizing: border-box;
+    background: white;
+    -webkit-box-shadow: inset 0px 0px 81px 0px rgba(244, 212, 198, 1);
+    -moz-box-shadow: inset 0px 0px 81px 0px rgba(244, 212, 198, 1);
+    box-shadow: inset 0px 0px 81px 30px rgba(244, 212, 198, 1);
+}
+
+#buttons{
+    display: flex;
+    height: 50px;
+
+}
+
+button{
+    width: 50%;
+    flex-wrap: wrap;
+    background-color: #f1bea5;
+    border: none;
+    border-right: 2px solid #915844;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+#buttons > button:hover{
+    font-weight: bold;
+    font-size: 16px;
+    background-color: #eaae92;
+    transition: font-size 0.1s, background-color 0.3s;
+
+}
+
+button:last-child{
+    border-left: 2px solid #915844;
+    box-sizing: border-box;
+}
+
+#footer {
+    background-color: #f1bea5;
+    top: 100%;
+    height: calc(100vh - 852px);
+    font-size: 90px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center; /* Wyśrodkowanie poziome */
+    align-items: center;
+}
+
+.correct {
+    color: green;
+}
+
+.incorrect {
+    color: red;
+}
+
+
+#winScreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(6, 216, 6, 0.23);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+    visibility: hidden;
+    z-index: 1000;
+    backdrop-filter: blur(4px);
+}
+
+#winScreen h1 {
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#replay {
+    font-size: 1.5em;
+    padding: 10px 20px;
+    color: green;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+#replay:hover {
+    background-color: #e0e0e0;
 }
