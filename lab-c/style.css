@@ -6,4 +6,5 @@ html, body {
 #map{
     height: 400px;
     width: 600px;
+    border: black 1px solid;
 }
