@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: block;
+    justify-content: center;
+    overflow: hidden;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+#weatherToday{
+    width: 20%;
+    height: 32%;
+    background: antiquewhite;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0 auto;
+
+}
+
+#weather5Days{
+    display: flex;
+    margin-top: 2%;
+}
+
+#weatherEachDay{
+    flex-wrap: wrap;
+    width: 12%;
+    height: 27%;
+    background: antiquewhite;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+img{
+    margin: -15%;
+}
+
+#weatherToday > img{
+    margin: -10%;
+}
+
+input, button {
+    font-size: 1rem;
+    padding: 10px;
+    margin: 5px;
+}

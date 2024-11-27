@@ -1,46 +1,35 @@
-{
-    "coord": {
-      "lon": 14.553,
-      "lat": 53.4289
-    },
-    "weather": [
-      {
-        "id": 803,
-        "main": "Clouds",
-        "description": "broken clouds",
-        "icon": "04d"
-      }
-    ],
-    "base": "stations",
-    "main": {
-      "temp": -0.1,
-      "feels_like": -4.99,
-      "temp_min": -1.14,
-      "temp_max": 0.23,
-      "pressure": 997,
-      "humidity": 88,
-      "sea_level": 997,
-      "grnd_level": 994
-    },
-    "visibility": 10000,
-    "wind": {
-      "speed": 4.92,
-      "deg": 221,
-      "gust": 8.05
-    },
-    "clouds": {
-      "all": 55
-    },
-    "dt": 1732175665,
-    "sys": {
-      "type": 2,
-      "id": 2034200,
-      "country": "PL",
-      "sunrise": 1732171119,
-      "sunset": 1732201029
-    },
-    "timezone": 3600,
-    "id": 3083829,
-    "name": "Szczecin",
-    "cod": 200
-  }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Maps with Leaflet</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="leaflet-1.7.1/leaflet.css" />
+    <script src="leaflet-1.7.1/leaflet-src.js"></script>
+    <script src="leaflet-1.7.1/leaflet-providers.js"></script>
+    <script src="leaflet-1.7.1/leaflet-image.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+<main>
+    <div id="map"></div>
+    <canvas id="canvas"></canvas>
+</main>
+<div id="buttons">
+    <button id="getLocation">Get Current Location</button>
+    <button id="saveButton">Save Raster Map</button>
+</div>
+<div id="dropAreaContainer">
+    <div id="puzzleContainer"></div>
+    <div id="dropArea" style=""></div>
+</div>
+<div id="footer"></div>
+
+<div id="winScreen">
+    <h1>You won!</h1>
+    <button id="replay">Play again!</button>
+</div>
+
+
+</body>
+</html>
