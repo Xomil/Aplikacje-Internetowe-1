@@ -15,6 +15,10 @@ header{
     left: 0;  
 }
 
+#style-links{
+    display: flex;
+}
+
 a{
     padding: 10px 0;
     margin: auto;
@@ -22,6 +26,7 @@ a{
     bottom: 0;
     color: black;
     text-decoration: none;
+    flex-wrap: wrap;
 }
 
 a:hover{
