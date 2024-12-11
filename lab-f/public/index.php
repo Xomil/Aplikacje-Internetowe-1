@@ -42,6 +42,40 @@ switch ($action) {
         $controller = new \App\Controller\InfoController();
         $view = $controller->infoAction();
         break;
+
+
+
+    //Club cases
+    case 'club-index':
+    case null:
+        $controller = new \App\Controller\ClubController();
+        $view = $controller->indexAction($templating, $router);
+        break;
+    case 'club-create':
+        $controller = new \App\Controller\ClubController();
+        $view = $controller->createAction($_REQUEST['club'] ?? null, $templating, $router);
+        break;
+    case 'club-edit':
+        if (! $_REQUEST['id']) {
+            break;
+        }
+        $controller = new \App\Controller\ClubController();
+        $view = $controller->editAction($_REQUEST['id'], $_REQUEST['club'] ?? null, $templating, $router);
+        break;
+    case 'club-show':
+        if (! $_REQUEST['id']) {
+            break;
+        }
+        $controller = new \App\Controller\ClubController();
+        $view = $controller->showAction($_REQUEST['id'], $templating, $router);
+        break;
+    case 'club-delete':
+        if (! $_REQUEST['id']) {
+            break;
+        }
+        $controller = new \App\Controller\ClubController();
+        $view = $controller->deleteAction($_REQUEST['id'], $router);
+        break;
     default:
         $view = 'Not found';
         break;
